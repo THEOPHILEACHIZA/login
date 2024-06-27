@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<title>theo.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="theo.css">
+<body>
+
+<div class="theo-container">
+  <h2>Please login to continue</h2>
+
+  <button onclick="document.getElementById('id01').style.display='block'" class="theo-button theo-green theo-large">Login</button>
+
+  <div id="id01" class="theo-modal">
+    <div class="theo-modal-content theo-card-4 theo-animate-zoom" style="max-width:600px">
+  
+      <div class="theo-center"><br>
+        <span onclick="document.getElementById('id01').style.display='none'" class="theo-button theo-xlarge theo-transparent theo-display-topright" title="Close Modal">×</span>
+        <img src="img_avatar4.png" alt="Avatar" style="width:30%" class="theo-circle theo-margin-top">
+      </div>
+
+      <form class="theo-container" action="https://www.theoschools.com/action_page.php">
+        <div class="theo-section">
+          <label><b>Username</b></label>
+          <input class="theo-input theo-border theo-margin-bottom" type="text" placeholder="Enter Username" name="usrname" required>
+          <label><b>Password</b></label>
+          <input class="theo-input theo-border" type="text" placeholder="Enter Password" name="psw" required>
+          <button class="theo-button theo-block theo-green theo-section theo-padding" type="submit">Login</button>
+          <input class="theo-check theo-margin-top" type="checkbox" checked="checked"> Remember me
+        </div>
+      </form>
+
+      <div class="theo-container theo-border-top theo-padding-16 theo-light-grey">
+        <button onclick="document.getElementById('id01').style.display='none'" type="button" class="theo-button theo-red">Cancel</button>
+        <span class="theo-right theo-padding theo-hide-small">Forgot <a href="#">password?</a></span>
+      </div>
+
+    </div>
+  </div>
+</div>
+            
+</body>
+
+<!-- Mirrored from www.theoschools.com/theocss/tryit.asp?filename=trytheocss_examples_modal_login by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Jan 2020 02:37:32 GMT -->
+</html>
